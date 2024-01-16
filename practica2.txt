@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int numint;
+        double numdbl, res1, res2, res3, res4, res5, res6;
+//Mensaje de bienvenida
+        System.out.printf("Bienvenidos, favor de seguir las instrucciones\n");
+//Documentar: imprimir el mensaje de vienvenida
+        Scanner scanner = new Scanner(System.in);
+//Documentar: objeto scanner para escanear los elementos ingresados por el usuario
+        System.out.printf("\nDigite un n£mero entero");
+//Documentar: imprime el mesaje para que el usuario digite el elemento
+        numint = scanner.nextInt(); //se escanea el elemento y se almacena en una variable como entero
+        System.out.printf("\nDigite un n£mero decimal");
+        numdbl = scanner.nextDouble(); // se escanea el elemento y se almacena en una variable como decimal
+        
+        res1 = numdbl + numint;
+        // esta linea suma el decimal con el entero
+        res2 = numint / (int)numdbl;
+        //esta linea divide el entero con un decimal que se convierte en entero
+        res3 = numint / numdbl;
+        //divide un entero con un decimal
+        res4 = numdbl / numint;
+        //divide un decimal con un entero
+        res5 = (int)numdbl / numint;
+        //divide un decimal convertido a entero entre un entero
+        res6 = (int)numdbl + numint;
+        // suma un decimal convertido en entero con un entero
+        System.out.printf("\nEl valor de la operaci¢n =" + res1);
+        System.out.printf("\nEl valor de la operaci¢n =" + res2);
+        System.out.printf("\nEl valor de la operaci¢n =" + res3);
+        System.out.printf("\nEl valor de la operaci¢n =" + res4);
+        System.out.printf("\nEl valor de la operaci¢n =" + res5);
+        System.out.printf("\nEl valor de la operaci¢n =" + res6);
+    }
